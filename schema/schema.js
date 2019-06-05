@@ -43,6 +43,7 @@ const SongType = new GraphQLObjectType({
 const SingerType = new GraphQLObjectType({
 	name: "SingerType",
 	fields: () => ({
+		id: {type: GraphQLID},
 		name: {type: GraphQLString},
 		age: {type: GraphQLInt},
 		songs: {
